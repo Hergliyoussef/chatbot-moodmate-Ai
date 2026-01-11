@@ -1,0 +1,13 @@
+# Ignorer les modèles de deep learning lourds (Hugging Face)
+model/MoodMate_BERT_Model/
+*.safetensors
+*.bin
+*.h5
+
+# Ignorer l'environnement virtuel et le cache
+venv/
+__pycache__/
+.env
+
+# Ignorer les datasets volumineux
+*.csv
