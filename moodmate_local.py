@@ -43,8 +43,8 @@ def predict(message, history):
 
 # --- 4. INTERFACE GRADIO (SANS BLOC DROIT) ---
 with gr.Blocks(theme=gr.themes.Soft()) as demo:
-    gr.Markdown("# 🧠 MoodMate Pro AI (Version Locale)")
-    gr.Markdown("Architecture Cyber-Sécurisée : **DistilBERT** + **Ollama (Gemma-2B)**")
+    gr.Markdown("# MoodMate Pro AI")
+    gr.Markdown("Architecture: **DistilBERT** + **Ollama (Gemma-2B)**")
 
     # Interface de chat simplifiée
     chatbot = gr.ChatInterface(
@@ -54,7 +54,7 @@ with gr.Blocks(theme=gr.themes.Soft()) as demo:
             gr.Textbox(label="Score de Confiance BERT"),
             gr.Textbox(label="Cohérence Système")
         ],
-        examples=["I finally fixed my bug!", "I am stressed about my exams"],
+        examples=["I don't fixed my bug ,I am stressed about my exams tomororrow"],
     )
     
     gr.Info("Données 100% locales. Aucune fuite d'information vers le Cloud.")
